@@ -1,4 +1,4 @@
-let order = [];;
+let order = [];
 let clickedOrder = [];
 let score = 0;
 
@@ -45,7 +45,7 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length){
-        alert('Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!')
+        alert('Pontuação:'+ score + '\nVocê acertou! Iniciando próximo nível!')
         nextLevel();
     }
 }
@@ -85,7 +85,7 @@ let nextLevel = () => {
 
 //funcao para game over
 let gameOver = () => {
-    alert('Pontuaçao: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo!)');
+    alert('Pontuaçao:' + score + '!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo!)');
     order = [];
     clickedOrder = [];
 
